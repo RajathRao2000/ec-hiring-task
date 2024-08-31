@@ -11,7 +11,7 @@ const Pagination = ({
     paginationNumber.push(i);
   }
   return (
-    <div className="border p-3 text-center ">
+    <div className="p-3 my-5 text-center ">
       {paginationNumber.map((data) => (
         <button
           key={data}
