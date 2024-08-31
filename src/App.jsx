@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import ProductListing from "./components/ProductListing/ProductListing";
-import SignIn from "./components/authentication/Signin/Signin";
+import SignIn from "./components/authentication/SignIn/SignIn";
 import SignUp from "./components/authentication/SignUp/SignUp";
 import { useContext } from "react";
 import AuthContext from "./context/authContext";
