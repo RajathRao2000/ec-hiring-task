@@ -3,7 +3,7 @@ const ProductCard = ({ id, title, price, thumbnail }) => {
     <div className="relative p-6 max-w-[375px] shadow rounded-2xl   h-full">
       <div className="relative  overflow-hidden bg-gray-50 ">
         <img
-          className=" border-black mx-auto w-full h-full"
+          className=" border-black mx-auto  aspect-[300/300]"
           src={thumbnail}
           alt=""
           width={300}
