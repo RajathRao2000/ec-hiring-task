@@ -11,7 +11,7 @@
     A responsive web application featuring secure authentication and dynamic product display with search and pagination.
     <br />
     <br />
-    <a href="https://ec-hiring-task-3gru.vercel.app/">View Demo</a>
+    <a href="https://ec-hiring-task-rkr.vercel.app/">View Demo</a>
   </p>
 </div>
 
