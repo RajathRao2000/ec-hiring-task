@@ -70,10 +70,10 @@ const Header = () => {
   const { setAuthData } = useContext(AuthContext);
   const [showNav, setShowNav] = useState(false);
 
-  useEffect(() => {
-    let auth = JSON.parse(localStorage.getItem("auth"));
-    if (auth) setAuthData(auth.email, auth.token);
-  }, []);
+  // useEffect(() => {
+  //   let auth = JSON.parse(localStorage.getItem("auth"));
+  //   if (auth) setAuthData(auth.email, auth.token);
+  // }, []);
 
   return (
     <header className="bg-white h-24 py-5 px-5 flex items-center justify-between w-full transition-[top] duration-500 ">
