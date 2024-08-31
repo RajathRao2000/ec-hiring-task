@@ -1,22 +1,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/RajathRao2000/store-rating-app-frontend">
-    <img src="public/store3d.jpg" alt="Logo" width="100" height="80">
+  <a href="https://github.com/RajathRao2000/ec-hiring-task">
+    <img src="readme_assets/main.jpg" alt="Logo" width="130" height="80">
   </a>
 
 <h3 align="center">Store Rating WebApp</h3>
 
   <p align="center">
-    A web application with authentication and Products display    <br />
-    <!-- <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br /> -->
+    A responsive web application featuring secure authentication and dynamic product display with search and pagination.
     <br />
-    <a href="https://store-rating-app-frontend.vercel.app/sign-in">View Demo</a>
-    <!-- ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a> -->
+    <br />
+    <a href="https://ec-hiring-task-3gru.vercel.app/">View Demo</a>
   </p>
 </div>
 
@@ -24,21 +19,36 @@
 
 ## About The Project
 
-A coding assignment from [Engineer's Cradle](https://engineerscradle.com/)
+This project is a submission for the Hiring Task from [Engineer's Cradle](https://engineerscradle.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-- [![React][React.js]][React-url]
-
-- ![Tailwind CSS](https://img.shields.io/static/v1?style=for-the-badge&message=Tailwind+CSS&color=222222&logo=Tailwind+CSS&logoColor=06B6D4&label=)
-- ![Vercel](https://img.shields.io/static/v1?style=for-the-badge&message=Vercel&color=000000&logo=Vercel&logoColor=FFFFFF&label=)
-- ![.ENV](https://img.shields.io/static/v1?style=for-the-badge&message=.ENV&color=222222&logo=.ENV&logoColor=ECD53F&label=)
+- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind+CSS-222222?style=for-the-badge&logo=Tailwind+CSS&logoColor=06B6D4)
+- ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=FFFFFF)
+- ![.ENV](https://img.shields.io/badge/.ENV-222222?style=for-the-badge&logo=.ENV&logoColor=ECD53F)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
+## Features
+
+- **Responsive Design:** Adapts to various screen sizes for an optimal user experience.
+- **Secure Authentication:** Includes registration and login with form validation.
+- **AJAX Search & Pagination:** Real-time product search and smooth client-side pagination.
+- **Modern Tech Stack:** Built with React and TailwindCSS for efficiency.
+- **Clean Code & Deployment:** Modular structure, reusable components, and deployed on Vercel.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Screenshots
+
+- **Login Page:**
+  ![Login Page](readme_assets/Sign-In.png)
+- **Sign-Up Page:**
+  ![Sign-Up](readme_assets/Sign-Up.png)
+- **Product Listing:**
+  ![Product Listing](readme_assets/Product-Listing.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
