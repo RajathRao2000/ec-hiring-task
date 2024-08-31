@@ -5,7 +5,7 @@
     <img src="readme_assets/main.jpg" alt="Logo" width="130" height="80">
   </a>
 
-<h3 align="center">Store Rating WebApp</h3>
+<h3 align="center">EC Hiring Task (Frontend)</h3>
 
   <p align="center">
     A responsive web application featuring secure authentication and dynamic product display with search and pagination.
