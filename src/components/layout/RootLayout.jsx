@@ -4,14 +4,12 @@ import Body from "./Body/Body";
 import AuthProvider from "../../context/AuthProvider";
 import { ToastContainer } from "react-toastify";
 import { Outlet } from "react-router-dom";
-const RootLayout = () => {
+const RootLayout = ({ children }) => {
   return (
     <AuthProvider>
       <ToastContainer />
       <Header />
-      <Body>
-        <Outlet />
-      </Body>
+      <Body>{children}</Body>
     </AuthProvider>
   );
 };
