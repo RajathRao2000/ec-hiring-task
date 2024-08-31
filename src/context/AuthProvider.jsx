@@ -1,5 +1,5 @@
-import { useState } from "react";
-import AuthContext from "./authContext";
+import { useEffect, useState } from "react";
+import AuthContext from "./authContext.jsx";
 const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState({
     email: "",
@@ -12,6 +12,10 @@ const AuthProvider = ({ children }) => {
       token,
     });
   }
+
+  useEffect(() => {
+    console.log(auth);
+  }, [auth]);
   function clearAuthData() {
     setAuth({
       email: "",

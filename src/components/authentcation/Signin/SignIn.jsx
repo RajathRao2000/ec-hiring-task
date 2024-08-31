@@ -9,9 +9,11 @@ import { useContext, useState } from "react";
 import API from "../../../utils/api";
 import toastMsg from "../../../utils/DisplayToast";
 import axios from "axios";
-import AuthContext from "../../../context/authContext";
+import AuthContext from "../../../context/authContext.jsx";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate();
   const { setAuthData } = useContext(AuthContext);
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -48,23 +50,24 @@ const SignIn = () => {
     emailInput.disabled = true;
     passwordInput.disabled = true;
     const { email, password } = formData;
+    setAuthData(email, "token");
     try {
-      const res = await axios.post(API.LOGIN, {
-        email,
-        password,
-      });
-
-      const { error, token } = res.data;
-      if (error) {
-        toastMsg("error", error);
-      } else {
-        setAuthData(email, token);
-        toastMsg("success", "Sign In Success !!");
-        setFormData({
-          email: "",
-          password: "",
-        });
-      }
+      // const res = await axios.post(API.LOGIN, {
+      //   email,
+      //   password,
+      // });
+      // const { error, token } = res.data;
+      // if (error) {
+      //   toastMsg("error", error);
+      // } else {
+      //   setAuthData(email, token);
+      //   toastMsg("success", "Sign In Success !!");
+      //   setFormData({
+      //     email: "",
+      //     password: "",
+      //   });
+      //   navigate("/product-listing");
+      // }
     } catch (error) {
       console.log(error, "api error");
       toastMsg("error", "We are Facing some issues please try again later...");
