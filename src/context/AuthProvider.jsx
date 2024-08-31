@@ -7,7 +7,7 @@ const AuthProvider = ({ children }) => {
   });
   function setAuthData(email, token) {
     setAuth((prev) => ({ ...prev, email, token }));
-    // localStorage.setItem("auth", JSON.stringify({ email, token }));
+    localStorage.setItem("auth", JSON.stringify({ email, token }));
   }
 
   function clearAuthData() {
@@ -15,7 +15,7 @@ const AuthProvider = ({ children }) => {
       email: "",
       token: "",
     });
-    // localStorage.removeItem("auth");
+    localStorage.removeItem("auth");
   }
 
   return (
