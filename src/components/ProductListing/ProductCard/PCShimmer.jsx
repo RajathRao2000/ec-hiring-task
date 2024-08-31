@@ -3,7 +3,7 @@ import ContentLoader from "react-content-loader";
 
 const PCShimmer = () => {
   return (
-    <div className="relative w-full max-w-[375px] shadow rounded-2xl border  h-full">
+    <div className="relative w-full max-w-[375px] shadow rounded-2xl h-full">
       <ContentLoader
         viewBox="0 0 500 280"
         height={300}

@@ -72,7 +72,7 @@ const SignUp = () => {
   return (
     <>
       <Helmet>
-        <title>Sign In</title>
+        <title>Sign Up</title>
         <meta name="description" content="Sign In to your Account" />
       </Helmet>
       <div className="min-h-[inherit] flex justify-center items-center">

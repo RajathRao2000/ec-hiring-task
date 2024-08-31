@@ -30,6 +30,7 @@ const ProductListing = () => {
     <>
       <Helmet>
         <title>Product Listing</title>
+        <meta name="description" content="Browse through or products!!" />
       </Helmet>
       <div className="">
         <p className="border p-1 text-center border-y-green-700 bg-green-300 text-green-800">
