@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import ProductListing from "./components/ProductListing/ProductListing";
 import SignIn from "./components/authentication/Signin/Signin";
-import SignUp from "./components/authentication/Signup/SignUp";
+import SignUp from "./components/authentication/SignUp/SignUp";
 import { useContext } from "react";
 import AuthContext from "./context/authContext";
 import { Navigate } from "react-router-dom";
