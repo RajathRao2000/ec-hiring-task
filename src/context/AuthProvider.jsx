@@ -6,28 +6,23 @@ const AuthProvider = ({ children }) => {
     token: "",
   });
   function setAuthData(email, token) {
-    console.log(email, token, "|||");
-    setAuth({
-      email,
-      token,
-    });
+    setAuth((prev) => ({ ...prev, email, token }));
+    localStorage.setItem("auth", JSON.stringify({ email, token }));
   }
 
-  useEffect(() => {
-    console.log(auth);
-  }, [auth]);
   function clearAuthData() {
     setAuth({
       email: "",
       token: "",
     });
+    localStorage.removeItem("auth");
   }
-  const store = {
-    auth,
-    setAuthData,
-    clearAuthData,
-  };
-  return <AuthContext.Provider value={store}>{children}</AuthContext.Provider>;
+
+  return (
+    <AuthContext.Provider value={{ auth, setAuthData, clearAuthData }}>
+      {children}
+    </AuthContext.Provider>
+  );
 };
 
 export default AuthProvider;

@@ -52,7 +52,6 @@ const SignUp = () => {
         email,
         password,
       });
-      console.log(res.data);
       const { data } = res.data;
       if (data.result === "OK") {
         toastMsg("success", "Success, Please Sign-in to continue !!");

@@ -17,8 +17,10 @@ const Pagination = ({
           key={data}
           onClick={() => handlePagination(data)}
           className={`${
-            currentPage === data ? "bg-blue-700 text-white" : ""
-          } p-3 ml-4 rounded hover:bg-blue-500 hover:text-white`}
+            currentPage === data
+              ? "bg-blue-700 text-white"
+              : "hover:border-blue-700 hover:text-blue-700"
+          } p-3 ml-4 rounded border `}
         >
           {data}
         </button>

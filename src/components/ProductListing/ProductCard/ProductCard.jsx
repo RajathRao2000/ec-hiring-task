@@ -9,7 +9,7 @@ const ProductCard = ({ id, title, price, thumbnail }) => {
           width={300}
           height={300}
         />
-        <div className="absolute bottom-4 -right-12 text-lg bg-green-600 text-white -rotate-[45deg] w-40 text-center ">
+        <div className="absolute bottom-4 -right-24 bg-green-600 text-white -rotate-[45deg] w-64  text-center ">
           $ {price}
         </div>
       </div>
