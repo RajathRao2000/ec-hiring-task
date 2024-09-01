@@ -1,4 +1,3 @@
-import { ShimmerPostItem } from "react-shimmer-effects";
 import ContentLoader from "react-content-loader";
 
 const PCShimmer = () => {

@@ -16,8 +16,6 @@ function App() {
           <Route path="*" element={<Navigate to="/sign-in" />} />
         )}
 
-        {/* {!auth.token && (
-          <> */}
         <Route
           path="/sign-in"
           element={auth.token ? <Navigate to="/product-listing" /> : <SignIn />}
@@ -26,8 +24,6 @@ function App() {
           path="/sign-up"
           element={auth.token ? <Navigate to="/product-listing" /> : <SignUp />}
         />
-        {/* </>
-        )} */}
       </Routes>
     </>
   );

@@ -50,7 +50,6 @@ const SignIn = () => {
     emailInput.disabled = true;
     passwordInput.disabled = true;
     const { email, password } = formData;
-    // setAuthData(email, "token");
     try {
       const res = await axios.post(API.LOGIN, {
         email,

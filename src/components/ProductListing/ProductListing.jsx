@@ -7,14 +7,11 @@ import Input from "../../UI/FormComponents/Input/Input";
 import Search from "./Search/Search";
 import AuthContext from "../../context/authContext";
 import useProductList from "../../custom-hooks/useProductList";
-import { ShimmerPostList } from "react-shimmer-effects";
 import PCShimmer from "./ProductCard/PCShimmer";
 import ContentLoader from "react-content-loader";
 const ProductListing = () => {
   const shimmer = [1, 1, 1, 1, 1, 1, 1, 1];
   const { auth } = useContext(AuthContext);
-  // const [posts, setPosts] = useState(apiData);
-  // const [loading, setLoading] = useState(false);
   const [products, loading, error] = useProductList(auth.token);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPge, SetPostsPerPage] = useState(8);

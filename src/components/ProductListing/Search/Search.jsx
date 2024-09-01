@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import Input from "../../../UI/FormComponents/Input/Input";
-// import apiData from "../../../utils/temp";
 import useProductList from "../../../custom-hooks/useProductList";
 import AuthContext from "../../../context/authContext";
 
