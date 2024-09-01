@@ -1,9 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Pagination from "../../UI/Pagination/Pagination";
-import apiData from "../../utils/temp";
 import ProductCard from "./ProductCard/ProductCard";
 import { useContext, useState } from "react";
-import Input from "../../UI/FormComponents/Input/Input";
 import Search from "./Search/Search";
 import AuthContext from "../../context/authContext";
 import useProductList from "../../custom-hooks/useProductList";
@@ -60,7 +58,6 @@ const ProductListing = () => {
               backgroundColor="#f3f3f3"
               foregroundColor="#ecebeb"
             >
-              {/* Create skeletons for 5 pagination buttons */}
               <rect x="0" y="10" rx="8" ry="8" width="40" height="50" />
               <rect x="50" y="10" rx="8" ry="8" width="40" height="50" />
               <rect x="100" y="10" rx="8" ry="8" width="40" height="50" />

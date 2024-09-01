@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div id="readme-top" align="center">
   <a href="https://github.com/RajathRao2000/ec-hiring-task">
     <img src="readme_assets/main.jpg" alt="Logo" width="130" height="80">
   </a>

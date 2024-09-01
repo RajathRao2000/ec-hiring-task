@@ -1,7 +1,7 @@
 import ICONTYPES from "./types";
 
 const Icons = ({
-  type = "loader",
+  type = "close",
   size = "3em",
   color = "black",
   className = "icon",

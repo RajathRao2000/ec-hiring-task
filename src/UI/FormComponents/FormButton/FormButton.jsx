@@ -1,5 +1,3 @@
-import React from "react";
-
 const FormButton = ({ type, label }) => {
   return (
     <button

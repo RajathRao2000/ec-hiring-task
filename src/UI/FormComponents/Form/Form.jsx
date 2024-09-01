@@ -1,5 +1,3 @@
-import React from "react";
-
 const Form = ({ submitFunction, children }) => {
   return (
     <form

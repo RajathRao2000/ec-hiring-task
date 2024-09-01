@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import API from "../utils/api";
-import apiData from "../utils/temp";
+import apiData from "../utils/apiDataLocal";
 import toastMsg from "../utils/DisplayToast";
 function useProductList(token) {
   const [isLoading, setIsLoading] = useState(false);
