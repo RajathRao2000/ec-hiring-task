@@ -9,6 +9,7 @@ import AuthContext from "../../context/authContext";
 import useProductList from "../../custom-hooks/useProductList";
 import { ShimmerPostList } from "react-shimmer-effects";
 import PCShimmer from "./ProductCard/PCShimmer";
+import ContentLoader from "react-content-loader";
 const ProductListing = () => {
   const shimmer = [1, 1, 1, 1, 1, 1, 1, 1];
   const { auth } = useContext(AuthContext);
@@ -54,7 +55,22 @@ const ProductListing = () => {
             currentPage={currentPage}
           />
         ) : (
-          <div>Loading...</div>
+          <div className="p-3 my-5 grid place-items-center">
+            <ContentLoader
+              width={300}
+              height={60}
+              viewBox="0 0 300 60"
+              backgroundColor="#f3f3f3"
+              foregroundColor="#ecebeb"
+            >
+              {/* Create skeletons for 5 pagination buttons */}
+              <rect x="0" y="10" rx="8" ry="8" width="40" height="50" />
+              <rect x="50" y="10" rx="8" ry="8" width="40" height="50" />
+              <rect x="100" y="10" rx="8" ry="8" width="40" height="50" />
+              <rect x="150" y="10" rx="8" ry="8" width="40" height="50" />
+              <rect x="200" y="10" rx="8" ry="8" width="40" height="50" />
+            </ContentLoader>
+          </div>
         )}
       </div>
     </>
